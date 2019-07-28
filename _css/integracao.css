@@ -1,0 +1,33 @@
+.imgtra{
+    position: relative;
+    width: 35%;
+    left: 35%;
+    border: solid #000 1px;
+  }
+  .imgsim{
+    position: relative;
+    width: 35%;
+    left: 35%;
+    border: solid #000 1px;
+  }
+  
+  .trapezio, .simpsonsimples{
+    padding-left: 5%;
+    max-width: 70%;
+    margin-left: 210px;
+    border-bottom: solid #000 3px;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 25px;
+  }
+  .titulo{
+    font-weight: bold;
+    font-size: 56px;
+  }
+  .simpsonsimples{
+    padding-bottom: 5%;
+  }
+  .eq{
+    width: 20%;
+    position: relative;
+    left: 35%; 
+  }

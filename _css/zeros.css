@@ -1,0 +1,33 @@
+  .imgbiss{
+    width: 30%;
+    position: relative;
+    left: 35%;
+    border: solid #000 1px;
+  }
+  .imgnr{
+    width: 20%;
+    position: relative;
+    left: 35%;
+    border: solid #000 1px;
+  }
+
+  .bisseccao, .newton_raphson, .secantes {
+    padding-left: 5%;
+    max-width: 80%;
+    margin-left: 210px;
+    border-bottom: solid #000 3px;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 25px;
+  }
+  .titulo{
+    font-weight: bold;
+    font-size: 56px;
+  }
+  .secantes{
+    padding-bottom: 5%;
+  }
+  .eq1, .eq2, .eq3, .eq4{
+    width: 20%;
+    position: relative;
+    left: 35%; 
+  }

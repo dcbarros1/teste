@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Última Aula</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../_css/integracao.css">
+    <link rel="stylesheet" href='../_css/site.css'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      Métodos Numéricos - Integração numérica
+    </header>
+    <div class="container">
+      <nav class="menu">
+        <h2>Tópicos</h2>
+          <ul class = 'botoes'>
+              <li><a href=""><button class = 'button'>Home</button></a></li>
+              <li><a href="../_view/zeros.html"><button class = 'button'>Zeros de Função</button></a></li>
+              <li><a href=""><button class = 'button'>Eq.Diferencial Ordinária</button></a></li>
+          </ul>
+          <ul class="icones-redes-sociais">
+              <li>
+                  <a href="" class="github">
+                      Github
+                  </a>
+              <li>
+                  
+                  <a href="" class="linkedin">
+                      LinkedIn
+                  </a>
+                  
+              </li>
+      </nav>
+      <section class="trapezio">
+        <h2 class = 'titulo'>Método dos Trapézios</h2>
+        <p>
+          Esse método é baseado nas fórmulas de Newton-Côtes, cujo aproxima a função f(x) por um polinômio, assim podendo resolver a integral conforme a equação:<br/><br/>
+        <a class = 'eq' href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\large&space;\int_{a}^{b}f(x)dx&space;\approx&space;A_0f(x_0)&space;&plus;&space;A_1f(x_1)&space;&plus;&space;...&space;=&space;\sum_{i&space;=&space;0}^{n}&space;A_if(x_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\large&space;\int_{a}^{b}f(x)dx&space;\approx&space;A_0f(x_0)&space;&plus;&space;A_1f(x_1)&space;&plus;&space;...&space;=&space;\sum_{i&space;=&space;0}^{n}&space;A_if(x_i)" title="\large \int_{a}^{b}f(x)dx \approx A_0f(x_0) + A_1f(x_1) + ... = \sum_{i = 0}^{n} A_if(x_i)" /></a>
+        <br/><br/>
+          Os intervalos entre x<sub>0</sub>,x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>, são igualmente espaçados, e a função "A" 
+          varia de acordo com o método escolhido.<br/><br/>
+       
+          O método dos trapézios aproxima a função f(x) por um polinômio do primeiro grau, dessa forma:<br/><br/>
+          <a class = 'eq'href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\large&space;\int_{x_0}^{x_1}f(x)dx&space;\approx&space;\frac{x_1&space;-&space;x_0}{2}(f(x_1)&space;-&space;f(x_0))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\large&space;\int_{x_0}^{x_1}f(x)dx&space;\approx&space;\frac{x_1&space;-&space;x_0}{2}(f(x_1)&space;-&space;f(x_0))" title="\large \int_{x_0}^{x_1}f(x)dx \approx \frac{x_1 - x_0}{2}(f(x_1) - f(x_0))" /></a>
+        </p>
+        
+        <img class = 'imgtra' src = '../_img/trapezio.PNG'>
+      </section>
+      <section class="simpsonsimples">
+        <h2 class = 'titulo'>Método de Simpson 1/3</h2>
+        <p>       
+            O método de Simpson 1/3 aproxima a função f(x) por um polinômio do segundo grau, dessa forma:<br/><br/>
+            <a class = 'eq' href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\large&space;\int_{x_0}^{x_1}f(x)dx&space;\approx&space;\frac{x_1&space;-&space;x_0}{3}(f(x_0)&space;-&space;4f(x_1)&space;&plus;&space;f(x_2))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\large&space;\int_{x_0}^{x_1}f(x)dx&space;\approx&space;\frac{x_1&space;-&space;x_0}{3}(f(x_0)&space;-&space;4f(x_1)&space;&plus;&space;f(x_2))" title="\large \int_{x_0}^{x_1}f(x)dx \approx \frac{x_1 - x_0}{3}(f(x_0) - 4f(x_1) + f(x_2))" /></a>
+          
+        </p>
+        <img class = 'imgsim' src = '../_img/simpson.PNG'>
+      </section>
+    </div>
+    <footer class="footer">
+      <p class = 'texto-footer'>
+      Copyright&copy;Davison Cavalcante, 2019
+      </p>
+    </footer>
+  </body>
+</html>
