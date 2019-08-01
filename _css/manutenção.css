@@ -1,0 +1,20 @@
+.atencao {
+    float: left;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+}
+
+.aviso {
+    float: left;
+    position: absolute;
+    left: 35%;
+    top: 60%;
+    font-size: 50px;
+}
+
+.desenvolvedor {
+    float: left;
+    position: absolute;
+    left: 20%;
+}

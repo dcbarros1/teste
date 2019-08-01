@@ -1,95 +1,117 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Última Aula</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../_css/zeros.css">
-    <link rel="stylesheet" href='../_css/site.css'>
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
-      Métodos Numéricos - Zero de função
-    </header>
-    <div class="container">
-      <nav class="menu">
-        <h2>Tópicos</h2>
-          <ul class = 'botoes'>
-              <li><a href=""><button class = 'button'>Home</button></a></li>
-              <li><a href="../_view/integracao.html"><button class = 'button'>Integração Numérica</button></a></li>
-              <li><a href=""><button class = 'button'>Eq.Diferencial Ordinária</button></a></li>
-          </ul>
-          <ul class="icones-redes-sociais">
-              <li>
-                  <a href="" class="github">
-                      Github
-                  </a>
-              <li>
-                  
-                  <a href="" class="linkedin">
-                      LinkedIn
-                  </a>
-                  
+
+<head>
+  <title>Última Aula</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../_css/zeros.css">
+  <link rel="stylesheet" href='../_css/site.css'>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    Métodos Numéricos - Zero de função
+  </header>
+  <div class="container">
+    <nav class="menu">
+      <h2>Tópicos</h2>
+      <ul class='botoes'>
+        <li><a href="../_view/manutenção.html"><button class='button'>Home</button></a></li>
+        <li><a href="../_view/integracao.html"><button class='button'>Integração Numérica</button></a></li>
+        <li><a href="../_view/manutenção.html"><button class='button'>Eq.Diferencial Ordinária</button></a></li>
+      </ul>
+      <ul class="icones-redes-sociais">
+        <li>
+          <a href="" class="github">
+            Github
+          </a>
+        <li>
+
+          <a href="" class="linkedin">
+            LinkedIn
+          </a>
+
+        </li>
+    </nav>
+    <section class="bisseccao">
+      <h2 class='titulo'>Método da Bissecção</h2>
+      <p>
+        Seja uma função contínua em [a,b] tal que f(a)*f(b) < 0, podemos aferir, então, que existe pelo menos um valor x
+          dentro desse intervalo que satisfaça a condição de f(x)=0. O método da bissecção visa estreitar esse intervalo
+          de tal modo que a distância entre os valores do intervalo [a,b] fiquem tão proximos ao valor da raiz quando
+          nos queiramos. </p> <img class='imgbiss' src='../_img/metodobissecção.gif'>
+          <h2>Algoritimo</h2>
+          <p class='algoritmo-biss'>
+            <ul>
+              <li>Escolha um valor de tolerância (&epsilon;
+                < 0.00001)</li> <br />
+              <li>Encontre um intervalo [a<sub>0</sub>,b<sub>0</sub>], tal que f(a<sub>0</sub>)*f(b<sub>0</sub>) </li>
+              <br />
+              <li><a class='eq1'
+                  href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;x_i&space;=&space;\frac{a_0&space;-&space;b_0}{2}&space;\Rightarrow&space;\begin{Bmatrix}&space;f(a_0)&space;<&space;0;&space;f(x_0)&space;>&space;0&space;&&space;[a_0,&space;b&space;=&space;x_0]&space;\\&space;f(b_0)&space;<&space;0;&space;f(x_0)&space;>&space;0&space;&&space;[a_0&space;=&space;x_0,&space;b_0]&space;\end{Bmatrix}"
+                  target="_blank"><img
+                    src="https://latex.codecogs.com/gif.latex?\bg_white&space;x_i&space;=&space;\frac{a_0&space;-&space;b_0}{2}&space;\Rightarrow&space;\begin{Bmatrix}&space;f(a_0)&space;<&space;0;&space;f(x_0)&space;>&space;0&space;&&space;[a_0,&space;b&space;=&space;x_0]&space;\\&space;f(b_0)&space;<&space;0;&space;f(x_0)&space;>&space;0&space;&&space;[a_0&space;=&space;x_0,&space;b_0]&space;\end{Bmatrix}"
+                    title="x_i = \frac{a_0 - b_0}{2} \Rightarrow \begin{Bmatrix} f(a_0) < 0; f(x_0) > 0 & [a_0, b = x_0] \\ f(b_0) < 0; f(x_0) > 0 & [a_0 = x_0, b_0] \end{Bmatrix}" /></a>
               </li>
-      </nav>
-      <section class="bisseccao">
-        <h2 class = 'titulo'>Método da Bissecção</h2>
-        <p>
-          Seja uma função contínua em [a,b] tal que f(a)*f(b) < 0, podemos aferir, então, que existe pelo menos
-          um valor x dentro desse intervalo que satisfaça a condição de f(x) = 0. O método da bissecção visa estreitar
-          esse intervalo de tal modo que a distância entre os valores do intervalo [a,b] fiquem tão proximos ao valor da
-          raiz quando nos queiramos.
-        </p>
-        <img class = 'imgbiss' src = '../_img/metodobissecção.gif'>
-        <h2>Algoritimo</h2>
-        <p class = 'algoritmo-biss'>
-          <ul>
-            <li>Escolha um valor de tolerância (&epsilon; < 0.00001)</li>
-            <br />
-            <li>Encontre um intervalo [a<sub>0</sub>,b<sub>0</sub>], tal que f(a<sub>0</sub>)*f(b<sub>0</sub>) </li>
-            <br />
-            <li><a class = 'eq1' href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;x_i&space;=&space;\frac{a_0&space;-&space;b_0}{2}&space;\Rightarrow&space;\begin{Bmatrix}&space;f(a_0)&space;<&space;0;&space;f(x_0)&space;>&space;0&space;&&space;[a_0,&space;b&space;=&space;x_0]&space;\\&space;f(b_0)&space;<&space;0;&space;f(x_0)&space;>&space;0&space;&&space;[a_0&space;=&space;x_0,&space;b_0]&space;\end{Bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;x_i&space;=&space;\frac{a_0&space;-&space;b_0}{2}&space;\Rightarrow&space;\begin{Bmatrix}&space;f(a_0)&space;<&space;0;&space;f(x_0)&space;>&space;0&space;&&space;[a_0,&space;b&space;=&space;x_0]&space;\\&space;f(b_0)&space;<&space;0;&space;f(x_0)&space;>&space;0&space;&&space;[a_0&space;=&space;x_0,&space;b_0]&space;\end{Bmatrix}" title="x_i = \frac{a_0 - b_0}{2} \Rightarrow \begin{Bmatrix} f(a_0) < 0; f(x_0) > 0 & [a_0, b = x_0] \\ f(b_0) < 0; f(x_0) > 0 & [a_0 = x_0, b_0] \end{Bmatrix}" /></a></li>          
-            <br />
-            <li>Se, a - b &ge; &epsilon;, repete o passo anterior até que a tolerância seja atingida.</li>  
-          </ul>
-        </p>
-      </section>
-      <section class="newton_raphson">
-        <h2 class = 'titulo'>Método de Newton-Raphson</h2>
-          <p>
-            O método de Newton-Raphson, consiste na aproximação da raiz da função f(x), por meio da reta tangente da função.
-            Esta análise pode ser obtida a partir da verificação geométrica da função conforme a imagem:
+              <br />
+              <li>Se, a - b &ge; &epsilon;, repete o passo anterior até que a tolerância seja atingida.</li>
+            </ul>
           </p>
-          <img class = 'imgnr' src = '../_img/nr-img.jpg'>
-          <p>
-            Sabe-se que a equação da reta é dada por:
-          </p>
-          <a class = 'eq2' href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;y_n&space;-&space;y_0&space;=&space;m*(x_n&space;-&space;x_0)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;y_n&space;-&space;y_0&space;=&space;m*(x_n&space;-&space;x_0)" title="y_n - y_0 = m*(x_n - x_0)" /></a>
-          <p>
-            Temos que:<br />y<sub>n</sub> = f(x<sub>n</sub>) = 0;<br />m é a inclinação da reta e é dada por: m = df(x<sub>0</sub>)/dx;<br />
-            logo, adicionando as considerações e reoganizando a equação temos:
-          </p>
-          <a class = 'eq3' href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;x_{n&plus;1}&space;=&space;x_n&space;-&space;\frac{f(x_n)}{f'(x_n)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;x_{n&plus;1}&space;=&space;x_n&space;-&space;\frac{f(x_n)}{f'(x_n)}" title="x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}" /></a>
-          <p>
-            Pode-se observar que a natureza desse método é iterativa, logo podemos iteragir esse método até uma margem de tolerância
-            igual ao método acima comentado.
-          </p>
-      </section>
-      <section class="secantes">
-        <h2 class = 'titulo'>Método das Secantes</h2>
-          <p>
-            O método da Secante é um método derivado do método de Newton-Raphson, o qual substitui-se a função da inclinação da reta tangente
-            , ou derivada da função, por uma aproximação numérica da mesma, assim como o método da bissecção são necessários dois pontos para
-            se analisar a raiz desta função no intervalo, conforme a equação abaixo:
-          </p>
-          <a class = 'eq4' href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;x_{n&plus;1}&space;=&space;x_n&space;-&space;f(x_n)\frac{x_n&space;-&space;x_{n-1}}{f(x_n)&space;-&space;f(x_{n-1})}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;x_{n&plus;1}&space;=&space;x_n&space;-&space;f(x_n)\frac{x_n&space;-&space;x_{n-1}}{f(x_n)&space;-&space;f(x_{n-1})}" title="x_{n+1} = x_n - f(x_n)\frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})}" /></a>
-      </section>
-    </div>
-    <footer class="footer">
-      <p class = 'texto-footer'>
-      Copyright&copy;Davison Cavalcante, 2019
+    </section>
+    <section class="newton_raphson">
+      <h2 class='titulo'>Método de Newton-Raphson</h2>
+      <p>
+        O método de Newton-Raphson, consiste na aproximação da raiz da função f(x), por meio da reta tangente da função.
+        Esta análise pode ser obtida a partir da verificação geométrica da função conforme a imagem:
       </p>
-    </footer>
-  </body>
+      <img class='imgnr' src='../_img/nr-img.jpg'>
+      <p>
+        Sabe-se que a equação da reta é dada por:
+      </p>
+      <a class='eq2'
+        href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;y_n&space;-&space;y_0&space;=&space;m*(x_n&space;-&space;x_0)"
+        target="_blank"><img
+          src="https://latex.codecogs.com/gif.latex?\bg_white&space;y_n&space;-&space;y_0&space;=&space;m*(x_n&space;-&space;x_0)"
+          title="y_n - y_0 = m*(x_n - x_0)" /></a>
+      <p>
+        Temos que:<br />y<sub>n</sub> = f(x<sub>n</sub>) = 0;<br />m é a inclinação da reta e é dada por: m =
+        df(x<sub>0</sub>)/dx;<br />
+        logo, adicionando as considerações e reoganizando a equação temos:
+      </p>
+      <a class='eq3'
+        href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;x_{n&plus;1}&space;=&space;x_n&space;-&space;\frac{f(x_n)}{f'(x_n)}"
+        target="_blank"><img
+          src="https://latex.codecogs.com/gif.latex?\bg_white&space;x_{n&plus;1}&space;=&space;x_n&space;-&space;\frac{f(x_n)}{f'(x_n)}"
+          title="x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}" /></a>
+      <p>
+        Pode-se observar que a natureza desse método é iterativa, logo podemos iteragir esse método até uma margem de
+        tolerância
+        igual ao método acima comentado.
+      </p>
+    </section>
+    <section class="secantes">
+      <h2 class='titulo'>Método das Secantes</h2>
+      <p>
+        O método da Secante é um método derivado do método de Newton-Raphson, o qual substitui-se a função da inclinação
+        da reta tangente
+        , ou derivada da função, por uma aproximação numérica da mesma, assim como o método da bissecção são necessários
+        dois pontos para
+        se analisar a raiz desta função no intervalo, conforme a equação abaixo:
+      </p>
+      <a class='eq4'
+        href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;x_{n&plus;1}&space;=&space;x_n&space;-&space;f(x_n)\frac{x_n&space;-&space;x_{n-1}}{f(x_n)&space;-&space;f(x_{n-1})}"
+        target="_blank"><img
+          src="https://latex.codecogs.com/gif.latex?\bg_white&space;x_{n&plus;1}&space;=&space;x_n&space;-&space;f(x_n)\frac{x_n&space;-&space;x_{n-1}}{f(x_n)&space;-&space;f(x_{n-1})}"
+          title="x_{n+1} = x_n - f(x_n)\frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})}" /></a>
+    </section>
+  </div>
+  <footer class="footer">
+    <p class='texto-footer'>
+      Copyright&copy;Davison Cavalcante, 2019
+    </p>
+  </footer>
+</body>
+
 </html>
